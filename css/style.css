@@ -1,0 +1,1051 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+
+.main_container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(270deg,#3aa57f,#5cc877);
+}
+.reg_nav{
+    background: linear-gradient(270deg,#3aa57f,#5cc877);
+    display: flex;
+    justify-content: space-between;
+    /* padding: .5rem 1rem; */
+    position: fixed;
+    top: .5rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+.nav_item_left li img{
+    width: 54px;
+    height: 14px;
+}
+.nav_item_left{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+.nav_item_left_signup{
+    padding-left: .9rem;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    text-decoration: none;
+}
+.nav_item_left_signup:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.nav_item_right{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 1rem;
+}
+.nav_item_right li img{
+    width: 20px;
+    height: 20px;
+}
+.nav_logo li img{
+    width: 125px;
+}
+
+/*----------------------- SIGNUP FORM CODE START -------------------------------*/
+.parent_regform_container{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+.regform_container{
+    background: hsla(0,0%,100%,.21);
+    border-radius: 35px;
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: 0 418px;
+    /* padding-top: 10rem; */
+}
+.reg_form_img{
+    position: absolute;
+    top: -7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6.88rem;
+    height: 6.26rem;
+    background: url(../images/bannerlogo.c7b85994.png) no-repeat 50%;
+    width: 170px;
+    height: 146px;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+.reg_form_title{
+    margin: 0;
+    padding: 4rem 0 4rem 4rem;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: .53rem;
+    font-weight: 700;
+    color: #271249;
+}
+.reg_form_box{
+    margin: auto;
+    padding: 0 26px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 1rem 3rem 2rem 3rem;
+    margin-top: 3rem;
+    background: url(../images/code1.4916115.49161158.png);
+    background-size: 100%;
+    height: 13rem;
+}
+
+/*----------- For round checkbox Start------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(72, 180, 123);
+  border-color: rgb(72, 180, 123);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fb76a1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+/*----------- For round checkbox Start------------------*/
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*----------- For round checkbox End------------------*/
+.switch_sigup::after{
+    content: "Encrypted registration";
+    color: #000;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.switch_reg::after{
+    content: "Remember the password";
+    color: #000;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.form_bottom_text{
+    text-align: center;
+}
+.form_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_reg_signup{
+    font-size: 1.61rem;
+    line-height: 1.61rem;
+    font-weight: 700;
+    color: #7a6daa!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signup:hover{
+    text-decoration: none;
+}
+.login_reg{
+    width: 6.7rem;
+    height: 6.7rem;
+    background: url(../images/login_1.6006d53.png) no-repeat 50%;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+}
+.reg_form_box .form-group{
+    margin: 1.6rem 0;
+}
+.reg_form_box .form-group input{
+    height: 2.6rem;
+    width: 100%;
+    font-size: .9rem;
+    line-height: .87rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-radius: 0;
+    color: #3a3a3a;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+    outline: none!important;
+    box-shadow: none!important;
+}
+/*----------------------- SIGNUP FORM CODE END -------------------------------*/
+
+
+/*----------------------- SIGNIN FORM CODE START -------------------------------*/
+.switch_sigin::after{
+    content: "Remember the password";
+    color: #000;
+    position: absolute;
+    left: 4rem;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .94rem;
+}
+.login_reg_signin{
+    font-size: 1.61rem;
+    line-height: 1.61rem;
+    font-weight: 700;
+    color: #000000!important;
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+.login_reg_signin:hover{
+    text-decoration: none;
+}
+/*----------------------- SIGNIN FORM CODE End -------------------------------*/
+
+
+
+/*-------------------------- DASHBOARD CODE START--------------------- */
+.parent_container{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.dashboard_banner{
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: auto;
+}
+.dashboard_banner_content{
+    background: url(../images/homeicon12.f05ee0d.f05ee0d1.png);
+    padding: 0.2rem 0.57rem;
+    height: 11rem;
+    background-size: 100%;
+    position: relative;
+
+}
+.dashboard_banner_content img{
+    position: absolute;
+    width: 142px;
+    height: 126px;
+    right: 1rem;
+    top: 2rem;
+}
+
+.dashboard_banner_content .total_title{
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #FFF;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+.dashboard_banner_content .total_balance{
+    position: relative;
+    font-size: 2.2rem;
+    line-height: 2.5625rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: #FFF;
+    padding-left: 2rem;
+}
+
+.dashboard_banner_content .total_unit{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    font-size: .96rem;
+    line-height: 1.2rem;
+    padding-left: .325rem;
+    font-weight: 200;
+    font-family: Helvetica;
+    color: #FFF;
+}
+.header_down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.35rem;
+    background: hsla(0,0%,100%,.21);
+    height:5.3125rem;
+    margin-bottom: 1.8125rem;
+}
+.header_down img{
+    width: 3.419925rem;
+    margin: 0 .6875rem 0 1.1875rem;
+}
+.header_down_content{
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+    color: #60458c;
+}
+
+.dash_menu_main{
+    border-radius: 2.1rem;
+    background: #FFF;
+    position: relative;
+    padding: 2rem .2rem;
+}
+.dash_menu_img img{
+    width: 20%;
+    position: absolute;
+    right: -1.35rem;
+    top: -80px;
+}
+
+.dash_menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 2rem;
+
+}
+
+.menu_item_icon img{
+    width: 4.712125rem;
+    height: 4.712125rem;
+    border-radius: 2.37rem;
+    margin: 0 2.8125rem .66rem 2.8125rem;
+}
+.menu_item_text{
+    font-size: .825rem;
+    line-height: .825rem;
+    font-weight: 400;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+
+.amount_promotion_parent{
+    padding-top: 4.56rem;
+    padding-bottom: 2.64rem;
+}
+.wallet_promotion_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.amount_info{
+    padding: 1rem 0.26rem 1rem 0.26rem;
+    height: 16.226rem;
+    background-color: #FFF;
+    border-radius: 10px;
+    /* background: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5)); */
+    position: relative;
+    width: 12.96;
+    height: 16.23rem;
+}
+.amount_info img{
+    display: block;
+    width: 4.949rem;
+    margin: 1.02rem 2.684rem 1.68rem 2.684rem;
+}
+.amount_balance{
+    font-size: 1.35rem;
+    line-height: 1.35rem;
+    font-weight: 700;
+    color: #282828;
+    margin: 0;
+    max-width: 10.38rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.amount_balance span{
+    margin-top: -.15rem;
+    display: inline-block;
+    vertical-align: text-top;
+    font-weight: 400;
+    color: #282828;
+    font-size: .78rem;
+}
+.amount_title{
+    color: #999;
+    text-align: left;
+    margin: 5px 0;
+    font-size: 1.26rem;
+    font-weight: 700;
+    line-height: 1.26rem;
+}
+.amount_account{
+    color: #999;
+    text-align: left;
+    font-size: .78rem;
+    line-height: .78rem;
+    margin-top: .63rem;
+}
+
+.join_section{
+    overflow: hidden;
+    padding-bottom: 6rem;
+    background-color: #fff;
+}
+.top_line_container{
+    margin-bottom: 1.8rem;
+    text-align: center;
+    overflow: hidden;
+}
+.top_line_container span{
+    width: 3rem;
+    height: .6rem;
+    background-color: #e0e0e0;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 1.2rem;
+}
+.join_section_title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #282828;
+    line-height: 1.83rem;
+    text-align: center;
+}
+.join_section_text{
+    color: #9696a2!important;
+    text-align: center;
+    width: 86%;
+    line-height: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+}
+.join_section_img{
+    display: block;
+    width: 72.5%;
+    height: auto;
+    margin: 2.79rem 0 3.75rem 0;
+}
+.login_input_group{
+    position: relative;
+    margin: 1.8rem 0;
+    border-bottom: 0;
+}
+.login_btn{
+    background: linear-gradient(270deg,#4caa8e,#5bc878);
+    box-shadow: 0 6px 15px 0 linear-gradient(270deg,#4caa8e,#5bc878);
+    border-radius: 10px;
+    font-size: 1.29rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    height: 3.212rem;
+    line-height: 3.212rem;
+}
+
+.member_warp{
+    position: relative;
+    width: auto;
+    background-color: #FF4500;
+    margin: 6.63rem auto 0;
+    border-radius: 1.5rem;
+    padding: 2.125rem 1.35rem;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+.member_warp_img{
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+.member_warp_img img{
+    width: 6rem;
+}
+.member_warp_title{
+    font-size: 1.56rem;
+    font-weight: 700;
+    line-height: 1.56rem;
+    color: #000;
+    text-align: center;
+}
+.member_warp_inner{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: .96rem 1.74rem;
+}
+.member_warp_inner_content img{
+    width: 50px;
+}
+.member_warp_inner_content p{
+    display: inline-block;
+    margin-left: 1.2rem;
+    vertical-align: text-bottom;
+    font-size: 1.35rem;
+    line-height: 1.35rem;
+    font-weight: 700;
+    color: #282828;
+    max-width: 15.18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.member_warp_inner_content p span{
+    font-size: .87rem;
+    line-height: .87rem;
+    font-weight: 300;
+    color: #f96f99;
+}
+
+.about_lefthand{
+    position: absolute;
+    left: 0;
+    top: 2.98rem;
+}
+.about_lefthand img{
+    width: 6rem;
+}
+.about_righthand{
+    position: absolute;
+    right: 0;
+    top: -4.221rem;
+}
+.about_righthand img{
+    width: 6rem;
+}
+.about_inner_head{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+.about_inner_head2{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+}
+.about_inner_content{
+    margin: 0rem 3rem 1rem 2rem;
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.83rem;
+}
+.about_inner img{
+    width: 70%;
+    margin: 0 3.106rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.14;
+    padding-bottom:2rem;
+}
+
+.global_partners_parent{
+    margin-top: 2rem;
+}
+
+.global_partners_titles{
+    padding-bottom: .78rem;
+    margin-bottom: .63rem;
+    text-align: center;
+    font-size: 1.26rem;
+    font-weight: 700;
+    line-height: 1.26rem;
+    color: #000;
+}
+.global_partners_inner{
+    background-color: #FFF;
+    border-radius: 24px;
+    padding: 1.74rem 0;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-row-gap: 2rem;
+}
+.global_partners_imgbox{
+    text-align: center;
+}
+
+
+.dashboard_footer{
+    margin: 0;
+    width: 100%;
+    height: 52px;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.dashboard_footer a img{
+    margin: auto;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    /* padding-top: 24px; */
+    line-height: 12px;
+    font-size: 12px;
+    color: #b5b5b5;
+    background: top no-repeat;
+    background-size: 22px 22px;
+}
+.dashboard_footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*-------------------------- DASHBOARD CODE END--------------------- */
+
+.recharge_container{
+    position: relative;
+    padding: 0;
+    z-index: 2;
+    width: 40%;
+    margin: 0 418px;
+}
+
+.recharge_amount_info{
+    position: relative;
+    width: 13.96rem;
+    height: 11.46rem;
+    padding: 1.688rem .26rem 1.669rem .26rem;
+    border-radius: 1.35rem;
+}
+.recharge_title{
+    font-size: 1.17rem;
+    color: #FFF;
+    font-weight: 400;
+    text-align: left;
+}
+.recharge_amount_info i{
+    font-size: 2rem;
+    color: #f76997;
+}
+.recharge_para p{
+    font-size: 1rem;
+    font-weight: 400!important;
+    line-height: 1.4rem;
+    color: #FFF;
+    text-align: justify;
+    color: #000;
+}
+
+/*------------------------ Deposit Code End -----------------------*/
+
+/*------------------------ Withdrawal Code Start -----------------------*/
+
+.parent_withdrawal_container{
+    padding-top: 5rem;
+    /* padding-bottom: 9rem; */
+}
+.withdrawal_form_box{
+    margin: auto;
+    padding: 0 26px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 1rem 5rem 4rem 4rem;;
+}
+.withdrawal_form_box .withdrawal_form_box_inner{
+    width: 40%;
+    margin: auto;
+}
+.withdrawal_form_head p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #6c757d;
+}
+.withdrawal_amt p{
+    font-size: 50px;
+    padding: 1rem 3.500rem;
+    text-align: center;
+    background-color: #e9ecef;
+}
+.withdrawal_form_box input, .withdrawal_form_box select{
+    border-radius: 4px;
+}
+.withdrawal_form_box textarea{
+    border-radius: 18px;
+}
+.withdrawal_form_box .btn{
+    border-radius: 24px;
+}
+
+
+
+/*------------------------ Withdrawal Code End -----------------------*/
+
+
+/*------------------------ Investing Code Start -----------------------*/
+.investlisting_nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-top: 1rem;
+}
+.investlisting_item{
+    font-weight: 400;
+    color: #9c87f6;
+    cursor: pointer;
+}
+.investlisting_nav .active {
+    position: relative;
+    font-weight: 800;
+    color: #feffff;
+    z-index: 3;
+}
+.investlisting_nav .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1.8rem;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    width: 9.859rem;
+    height: 6.06rem;
+    background: url('../images/list_3.a4a71bd.png') no-repeat 50%;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+.investlisting_box_parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 1.5rem;
+    margin-top: 3.3rem;
+}
+.investing_wrap_inner_content{
+    width: 100%;
+    border-radius: 8.64px;
+    padding: 1rem;
+}
+.investing_wrap_inner_content p{
+    margin-left: 0;
+}
+.investing_wrap_inner_content .member_warp_inner_content img {
+    width: 100%;
+}
+.member_warp_inner_content a{
+    text-decoration: none;
+}
+.member_warp_inner_content a:hover{
+    text-decoration: none;
+}
+/*------------------------ Investing Code End -----------------------*/
+
+/*------------------------ Invespro Start -----------------------*/
+.parent_investpro_container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.investpro_container{
+    width: 93%
+}
+.investpro_top_box{
+background-color: #40afff;
+    background-image: linear-gradient(45deg,#40afff,#3574fa);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.investpro_top_box_img{
+    background: url('../images/invest_user.84c0979.png') no-repeat 100% 100%;
+    background-size: 30%;
+    width: 70%;
+}
+.investpro_box{
+    padding: .7rem 1.1rem;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.investpro_box_item{
+    display: flex;
+    justify-content: space-between;
+}
+.investpro_box_item p{
+    margin-bottom: .8rem;
+    font-size: .9rem;
+}
+.investpro_box_item .form-group{
+    width: 100%;
+}
+/*------------------------ Invespro End -----------------------*/
+
+/*------------------------------ Trade Start------------------------- */
+.trade_profit_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;    
+    box-shadow: 0 1px 14px 0 rgb(184 175 174 / 36%);
+    padding: 1rem;
+    background: #fb76a1;
+    margin-bottom: 2rem;
+}
+.trade_img{
+    width: 68px;
+    height: 63px;
+}
+.total_unit{
+    font-size: 13px;
+    font-weight: 400;
+    color: #60458c;
+}
+/* .trade_profit_btn{
+    color: white;
+    border-radius: 5px;
+} */
+/*------------------------------ Trade End------------------------- */
+
+/*------------------------------ Share Start------------------------- */
+.share_img{
+    display: flex;
+    justify-content: center;
+}
+.share_img img{
+    width: 211.188px;
+    height: 199.672px;
+}
+.share_text h3{
+    font-size: 16px;
+    line-height: 21.6px;
+    font-weight: 700;
+    color: #FFF;
+    text-align: left;
+}
+.share_text p{
+    text-align: left!important;
+    font-weight: 400;
+    color: #FFF;
+}
+.share_form_group input{
+    color: #000!important;
+    background-color: #FFF;
+    border-radius: 28.32px!important;
+    
+}
+.share_form_group input:focus{
+    background-color: #FFF;
+    
+}
+.share_form_group button{
+    font-size: 12.48px;
+    color: #FFF!important;
+    position: absolute;
+    right: 2%;
+    border-radius: 24px!important;
+    background: linear-gradient(1turn,#4ba791,#63d467);
+}
+.qr_text h3{
+    text-align: center;
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34.56px;
+}
+.qr_text p{
+    text-align: center;
+    color: #000;
+    font-size: 16.32px;
+    font-weight: 400;
+    line-height: 16.32px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.qr_img{
+    background-color: #FFF;
+    padding: .8rem;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+}
+/*------------------------------ Share End------------------------- */
+
+.parent_team_container{
+    padding-top: 5rem;
+    padding-bottom: 9;
+}
+.team_level_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+}
+.team_level_container button{
+    background-color: #3bd1d6;
+    border: 1px solid #3bd1d6;
+    padding: .3rem 3.1rem!important;
+}
+.team_level_container button:hover{
+    background-color: #3bd1d6;
+    border: 1px solid #3bd1d6;
+}
+.team_pagination{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .9rem;
+    background-color: #FFF;
+    border-bottom: 2px solid grey;
+}
+.team_pagination_down{
+    display: flex;
+    justify-content: end;
+    background-color: #FFF;
+    padding: 0 .9rem;
+    padding-bottom: 1rem;
+}
+.team_pagination_down span{
+    font-size: 12px;
+}
+
+
+/* MIne PAGE */
+.mine_banner_content{
+    padding: 0.2rem 0.57rem;
+    height: 11rem;
+    background-size: 100%;
+    position: relative;
+}
+
+/*----------------------- MOBILE DEVICE CODE START ------------------*/
+@media (max-width: 1020px) {
+    .regform_container{
+        width: 100%;
+    }
+
+    .dashboard_banner{
+        width: 100%;
+    }
+    .amount_info {
+        width: 49%;
+        height: auto;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .amount_balance {
+        max-width: 30.38rem;
+    }
+    .amount_title {
+        text-align: center;
+    }
+    .amount_info img {
+        margin: 2.02rem 7.684rem 1.68rem 7.684rem;
+    }
+    .amount_account {
+        text-align: center;
+    }
+
+
+    /*------------------------ Deposit Code Starts -----------------------*/
+.recharge_container{
+
+    width: 95%;
+}
+.recharge_amount_info{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+
+}
+
+
+
+/*------------------------ Deposit Code End -----------------------*/
+
+/*------------------------ Withdrawal Code Start -----------------------*/
+.withdrawal_form_box {
+    padding: 1rem 1rem 4rem 1rem;
+}
+
+.withdrawal_form_box .withdrawal_form_box_inner {
+    width: 100%;
+}
+/*------------------------ Withdrawal Code End -----------------------*/
+
+/*------------------------ Investing Code start -----------------------*/
+.investlisting_box_parent{
+    display: block;
+}
+.investing_wrap_inner_content {
+    margin-top: 1.5rem;
+}
+/*------------------------ Investing Code end -----------------------*/
+
+/*------------------------ Share Code Start -----------------------*/
+.qr_img{
+    width: 40%;
+}
+/*------------------------ Share Code End -----------------------*/
+
+.team_form_box{
+    padding: 0!important;
+}
+}
